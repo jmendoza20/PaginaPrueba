@@ -1,1 +1,6 @@
 /* -- HEADER -- */
+.jumbotron {
+    background: #00ADB6;
+    color: #FFF;
+    padding: 12px 0;
+}
