@@ -2,5 +2,21 @@
 .jumbotron {
     background: #00ADB6;
     color: #FFF;
-    padding: 12px 0;
+    font-family: Helvetica;
+    font-size: 40px;
+    padding: 13px 0;
+ 
+}
+
+#titulo{
+    margin-top: 1%;
+    margin-left: -5%;
+    margin-bottom: 2%;
+    width: 85%;
+}
+#logo{
+    position: absolute;
+    width: 17%;
+    right: 1%;
+    top: 0%;
 }
