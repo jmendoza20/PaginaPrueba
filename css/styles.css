@@ -2,7 +2,7 @@
 .jumbotron {
     background: #00ADB6;
     color: #FFF;
-    font-family: Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     padding: 13px 0;
  
@@ -19,4 +19,68 @@
     width: 17%;
     right: 1%;
     top: 0%;
+}
+
+#prepa{
+color: #00ADB6;
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#parrafop{
+color: #9C9F9F;
+font-size: 17px;
+font-family:  Arial, Helvetica, sans-serif;
+margin-left: 5%;
+margin-right: 20%;
+border-bottom: 5px solid #00adb6;
+}
+
+#libros{
+    position: absolute;
+    left: 235%;
+    bottom : 10%;
+}
+
+.red-box {
+    background-color: #e75d61;
+    color: #fff;
+    border-left: 7px solid #e75d61;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.red-mark {
+    background-color: #d12225;
+    left: 0px;
+    position: absolute;
+    width: 7px;
+    height: 100%;
+}
+
+.blue-box {
+    background-color: #25c8c0;
+    color: #fff;
+    border-left: 7px solid #00adb6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue-mark {
+    background-color: #007873;
+    left: 0px;
+    position: absolute;
+    width: 7px;
+    height: 100%;
+}
+
+.small-space {
+    margin-top: 2%;
+}
+
+.text {
+    font-size: 18px;
+}
+
+#info1 {    
+    margin-top: .7%;
+    
 }
