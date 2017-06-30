@@ -194,6 +194,7 @@ font-size: 40px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
 #parrafoc{
 color: #9C9F9F;
 font-size: 18px;
@@ -206,3 +207,27 @@ border-top: 5px solid #00adb6;
     right: 2.75%;
     
 }
+=======
+#parrafoc1{
+color: #9C9F9F;
+font-size: 17px;
+font-family:  Arial, Helvetica, sans-serif;
+margin-left: 5%;
+margin-right: 20%;
+border-top: 5px solid #00adb6;
+}
+
+#parrafoc2{
+color: #9C9F9F;
+font-size: 17px;
+font-family:  Arial, Helvetica, sans-serif;
+margin-left: 5%;
+margin-right: 20%;
+}
+
+#compu{
+    position: absolute;
+    left: 245%;
+    top : 60%;
+}
+>>>>>>> cursosfase1
