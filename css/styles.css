@@ -1,10 +1,7 @@
-/* -- HEADER -- */
-<<<<<<< HEAD
 
-
-/* -- GERO -- */
 #estudiarEnLinea{
     background-color: #F2F2F2;
+
     border-bottom: 5px solid #999999;
     border-bottom: 5px solid #333;
 }
@@ -27,7 +24,8 @@
     font-stretch: expanded;
 }
 
-.imgP{
+
+#imgENL{
     width: 270px;
     right: 270px;
 }
@@ -38,8 +36,7 @@
     width: 415px;
     height: 200;
     display: block;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 #divRequisitos{
@@ -101,7 +98,6 @@ ul.tips{
     margin-bottom: 15px;
 }
 
-/* - GERO FIN- */
 
 
 .encabezado{
@@ -119,10 +115,10 @@ ul.tips{
 }
 .conte{
     width: 100%;
-    padding-top: : 90px;
+    padding-top: 90px;
     overflow: hidden;
-
 }
+
 .fondo1{
     background-color: #ff6666;  
 }
@@ -210,7 +206,7 @@ hr{
     left: 800px;
     top: 1%;
     bottom : 0px;
-    width: 400px;*/
+    width: 400px;
     height: 400px;
 }
 
