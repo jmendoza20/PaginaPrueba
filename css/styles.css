@@ -2,7 +2,6 @@
 #estudiarEnLinea{
     background-color: #F2F2F2;
     border-bottom: 5px solid #999999;
-
 }
 
 #divENL{
@@ -23,14 +22,12 @@
     font-stretch: expanded;
 }
 
-
-#imgENL{
+.imgP{
     width: 270px;
     right: 270px;
 }
 
 #img2ENL{
-
     width: 415px;
     height: 200;
     display: block;
@@ -68,11 +65,8 @@ ul.tips{
     font-size: 30px;
     color: #E75D61;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 40px;
-    padding-bottom: 15px;
     padding-top: 30px;
     padding-bottom: 10px;
-
 }
 
 #prgR{
@@ -81,9 +75,7 @@ ul.tips{
     color:  #999999;
     font-family: Arial, Helvetica, sans-serif;
     font-stretch: expanded;
-    padding-bottom: 50px;
     padding-bottom: 40px;
-
 }
 
 .imgPgrande{
