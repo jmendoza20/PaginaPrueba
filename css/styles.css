@@ -5,6 +5,7 @@
 #estudiarEnLinea{
     background-color: #F2F2F2;
     border-bottom: 5px solid #999999;
+    border-bottom: 5px solid #333;
 }
 
 #divENL{
@@ -33,6 +34,8 @@
 #img2ENL{
     width: 300px;
     height: 130;
+    width: 415px;
+    height: 200;
     display: block;
     margin: auto;
     
