@@ -4,6 +4,7 @@
 /* -- GERO -- */
 #estudiarEnLinea{
     background-color: #F2F2F2;
+    border-bottom: 5px solid #333;
 }
 
 #divENL{
@@ -27,6 +28,14 @@
 #imgENL{
     width: 270px;
     right: 270px;
+}
+
+#img2ENL{
+    width: 415px;
+    height: 200;
+    display: block;
+    margin: auto;
+    
 }
 
 #divRequisitos{
