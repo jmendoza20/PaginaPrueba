@@ -74,6 +74,9 @@ ul.tips{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
     padding-bottom: 15px;
+=======
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 #prgR{
@@ -83,6 +86,7 @@ ul.tips{
     font-family: Arial, Helvetica, sans-serif;
     font-stretch: expanded;
     padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .imgPgrande{
@@ -90,12 +94,12 @@ ul.tips{
     right: 270px;
 }
 
+<<<<<<< HEAD
 .smallMargin{
     margin: 2px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 
 /* - GERO FIN- */
 
