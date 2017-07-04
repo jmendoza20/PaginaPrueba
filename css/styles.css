@@ -100,7 +100,7 @@ ul.tips{
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    padding: 13px 0;
+    padding: 15px 0;
 }
 
 #titulo{
@@ -116,6 +116,15 @@ ul.tips{
     top: 0%;
 }
 
+.intro{
+    width: 75%;
+}
+.hidden-intro{
+    width: 60%;
+    left: 94%;
+    margin-top: -32%; 
+    
+}
 #prepa{
 color: #00ADB6;
 font-size: 40px;
@@ -126,16 +135,15 @@ font-family: Arial, Helvetica, sans-serif;
 color: #9C9F9F;
 font-size: 17px;
 font-family:  Arial, Helvetica, sans-serif;
-margin-left: 5%;
-margin-right: 20%;
+}
+
+#parrafop2{
+color: #9C9F9F;
+font-size: 17px;
+font-family:  Arial, Helvetica, sans-serif;
 border-bottom: 5px solid #00adb6;
 }
 
-#libros{
-    position: absolute;
-    left: 235%;
-    bottom : 10%;
-}
 
 .red-box {
     background-color: #e75d61;
@@ -185,12 +193,14 @@ font-size: 40px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.introc{
+width: 70%;
+}
+
 #parrafoc1{
 color: #9C9F9F;
 font-size: 17px;
 font-family:  Arial, Helvetica, sans-serif;
-margin-left: 5%;
-margin-right: 20%;
 border-top: 5px solid #00adb6;
 }
 
@@ -198,12 +208,10 @@ border-top: 5px solid #00adb6;
 color: #9C9F9F;
 font-size: 17px;
 font-family:  Arial, Helvetica, sans-serif;
-margin-left: 5%;
-margin-right: 20%;
 }
 
-#compu{
-    position: absolute;
-    left: 245%;
-    top : 60%;
+.hidden-introc{
+    width: 60%;
+    left: 94.5%;
+    margin-top: -28.5%;
 }
