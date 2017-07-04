@@ -1,4 +1,58 @@
 /* -- HEADER -- */
+
+
+/* -- GERO -- */
+#estudiarEnLinea{
+    background-color: #F2F2F2;
+}
+
+#divENL{
+    padding-top: 20px;
+}
+
+#headerENL{
+    font-size: 35px;
+    color: #E75D61;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#prgENL{
+    text-align: left;
+    font-size: 19px;
+    color:  #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+}
+
+#imgENL{
+    width: 270px;
+    right: 270px;
+}
+
+#divRequisitos{
+    border-left: 2px solid #00ADB6;
+}
+
+.textSec{
+    text-align: left;
+    font-size: 18px;
+    color:  #AF9999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+    text-align: justify;
+}
+
+ul.tips{
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.complementovacio{
+    color: #F2F2F2;
+}
+
+/* - GERO FIN- */
+
 .jumbotron {
     background: #00ADB6;
     color: #FFF;
