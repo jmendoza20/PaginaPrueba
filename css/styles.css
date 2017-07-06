@@ -17,11 +17,14 @@
     background-color: #ff6666;  
     
 }
+.cont{
+   
+}
 #fondo{
-    
+/*position: absolute;*/
 }
 #glote{
-    position: absolute;
+   position: absolute;
     margin-top: -35%;
     margin-left: 28%;
 }
