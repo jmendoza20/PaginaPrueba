@@ -1,4 +1,100 @@
 /* -- HEADER -- */
+
+
+/* -- GERO -- */
+#estudiarEnLinea{
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #999999;
+}
+
+#divENL{
+    padding-top: 20px;
+}
+
+#headerENL{
+    font-size: 35px;
+    color: #E75D61;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#prgENL{
+    text-align: left;
+    font-size: 19px;
+    color:  #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+}
+
+.imgP{
+    width: 270px;
+    right: 270px;
+}
+
+#img2ENL{
+    width: 300px;
+    height: 130;
+    display: block;
+    margin: auto;
+    
+}
+
+#divRequisitos{
+    border-left: 2px solid #00ADB6;
+}
+
+.textSec{
+    text-align: left;
+    font-size: 18px;
+    color:  #AF9999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+    text-align: justify;
+}
+
+ul.tips{
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.complementovacio{
+    color: #F2F2F2;
+}
+
+#divRecuerda{
+    background-color: #F2F2F2;
+    border-top: 5px solid #999999;
+}
+
+#headerR{
+    font-size: 30px;
+    color: #E75D61;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#prgR{
+    text-align: left;
+    font-size: 19px;
+    color:  #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+    padding-bottom: 50px;
+}
+
+.imgPgrande{
+    width: 320px;
+    right: 270px;
+}
+
+.smallMargin{
+    margin: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* - GERO FIN- */
+
 .jumbotron {
     background: #00ADB6;
     color: #FFF;
