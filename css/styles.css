@@ -1,4 +1,5 @@
 /* -- HEADER -- */
+<<<<<<< HEAD
 
 
 /* -- GERO -- */
@@ -102,25 +103,78 @@ ul.tips{
 
 /* - GERO FIN- */
 
-.jumbotron {
+
+.encabezado{
+    position: fixed;
+    width: 100%;
     background: #00ADB6;
-    color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    padding: 14px 0;
+    z-index: 100;
+    
+}
+.p1{
+  width: 100%;
+  
+}
+.conte{
+    width: 100%;
+    padding-top: : 90px;
+    overflow: hidden;
+
+}
+.fondo1{
+    background-color: #ff6666;  
 }
 
+#glote{
+   position: absolute;
+    margin-top: -32%;
+    margin-left: 30%;
+}
+#chi{
+    position: absolute;
+    margin-top: -35%;
+    margin-left: 53%;
+}
+
+.separador{
+    height: 80px;
+}
+.fondo4{
+    border-bottom-style: solid;
+    border-bottom-width: .5em;
+    border-top-style: solid;
+    border-top-width: .5em;
+    border-color:  #999999; 
+    background-color:#f2f2f2 ;
+}
+.titu{
+    color:#00ADB6;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px
+}
+.NiSu{
+    color: gray;
+    font-size:18px;
+
+}
 #titulo{
     margin-top: 1%;
-    margin-left: -5%;
+    margin-left: 5%;
     margin-bottom: 2%;
     width: 85%;
+    color:white;
+    font-weight: bolder;
+
 }
 #logo{
     position: absolute;
-    width: 17%;
+    width: 15%;
     right: 1%;
-    top: 0%;
+    top: 5px;
+
 }
 
 #prepa{
@@ -135,10 +189,29 @@ font-size: 18px;
 font-family:  Arial, Helvetica, sans-serif;
 border-bottom: 5px solid #00adb6;
 }
+    
+hr{
+    height: 4px;
+    margin-left:0px;
+    background-color: #00adb6;
+}
 
-#imglibros{
-right: 2.75%;
+#mano{
+    margin-top: 0px;
+    width: 330px;
+    height: 330px;
+}
+.mano{
+    position: top;
 
+}
+#libros{
+    position: absolute;
+    left: 800px;
+    top: 1%;
+    bottom : 0px;
+    width: 400px;*/
+    height: 400px;
 }
 
 .red-box {
@@ -146,8 +219,28 @@ right: 2.75%;
     color: #fff;
     border-left: 7px solid #e75d61;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
 }
-
+.solo{
+    background-color: #25c8c0;
+    border-left: 7px solid #00adb6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+#solo{
+    color: blue;
+}
+.tletra{
+    
+     background-color: #e75d61;
+    color: #fff;
+    border-left: 7px solid #e75d61;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height:261px;
+}
 .red-mark {
     background-color: #d12225;
     left: 0px;
@@ -161,6 +254,9 @@ right: 2.75%;
     color: #fff;
     border-left: 7px solid #00adb6;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+
 }
 
 .blue-mark {
@@ -176,6 +272,7 @@ right: 2.75%;
 }
 
 .text {
+    font-weight: bolder;
     font-size: 18px;
 }
 
