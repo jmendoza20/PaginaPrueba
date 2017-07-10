@@ -1,36 +1,39 @@
 /* -- HEADER -- */
 /*.jumbotron {
-  
 }*/
-
 .encabezado{
     position: fixed;
-    right: 0;
+    width: 100%;
     background: #00ADB6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    /*padding: 2px;*/
     z-index: 100;
+
+}
+.p1{
+  width: 100%;
+  
+}
+.conte{
+    width: 100%;
+    padding-top: : 90px;
+    overflow: hidden;
+
 }
 .fondo1{
     /*max-width: 100%;*/
     background-color: #ff6666;  
     
 }
-.cont{
-   
-}
-#fondo{
-/*position: absolute;*/
-}
+
 #glote{
    position: absolute;
-    margin-top: -35%;
-    margin-left: 28%;
+    margin-top: -32%;
+    margin-left: 30%;
 }
 #chi{
     position: absolute;
-    margin-top: -38%;
+    margin-top: -35%;
     margin-left: 53%;
 }
 .Btop{
