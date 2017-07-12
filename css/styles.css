@@ -1,4 +1,7 @@
 
+/* -- HEADER -- */
+
+/* -- GERO -- */
 #estudiarEnLinea{
     background-color: #F2F2F2;
     border-bottom: 5px solid #999999;
@@ -99,10 +102,7 @@ ul.tips{
     z-index: 100;
     
 }
-.p1{
-  width: 100%;
-  
-}
+
 .conte{
     width: 100%;
     padding-top: 90px;
@@ -111,22 +111,28 @@ ul.tips{
 
 .fondo1{
     background-color: #ff6666;  
+    padding-top: : 90px;
+    background-color: #ff6666; 
+
+}
+#fondo{
+    width: 100%;
 }
 
 #glote{
    position: absolute;
-    margin-top: -32%;
-    margin-left: 30%;
+    margin-top: -35%;
+    margin-left: 34%;
 }
 #chi{
     position: absolute;
     margin-top: -35%;
-    margin-left: 53%;
-    padding: 15px 0;
+    margin-left: 60%;
+
 }
 
 .separador{
-    height: 80px;
+    height: 75px;
 }
 .fondo4{
     border-bottom-style: solid;
@@ -191,12 +197,6 @@ hr{
 
 .mano{
     position: top;
-}
-
-
-#imglibros{
-right: 2.75%;
-
 }
 
 .red-box {
