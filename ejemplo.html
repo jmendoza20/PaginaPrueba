@@ -15,27 +15,27 @@
         <div class="btn-group" id="inicioMenu">
            
             <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0">
-                <input class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
+                <input id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
             </div>
             
             <div class="col-xs-1 col-md-12">
-                <input class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
+                <input id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
             </div>
             
             <div class="col-xs-1 col-md-12">
-                <input class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
+                <input id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
             </div>
             
             <div class="col-xs-1 col-md-12">
-                <input class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
+                <input id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
             </div>
             
             <div class="col-xs-1 col-md-12">
-                <input class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
+                <input id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
             </div>
             
             <div class="col-xs-1 col-md-12">
-                <input class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
+                <input id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
             </div>
             
         </div>
@@ -49,7 +49,7 @@
     </header>
 </div>
 
-<section class="container-fluid">
+<section id="inicio" class="container-fluid">
     <section class="row fondo1">
         <div class="conte">
             <img class="" src="img/fondo.svg" id="fondo">
@@ -67,11 +67,15 @@
         </div>
     </section>
     <div class="separador col-xs-12"></div>
+    <br>
+    <br>
+    <br>
+    <div id="EstudiarEnLinea"></div>
+    
 </section>
 
 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-
-<section class="">
+<section>
     <div class="col-xs-12 col-sm-12 col-md-12" id="estudiarEnLinea">
        
         <div class="col-xs-12 col-sm-8 col-md-8" id="divENL">
@@ -141,8 +145,7 @@
         </div>
     </div>
 </section>
-
-<div class="separador col-xs-12"></div> 
+<div id="PrepaScroll" class="separador col-xs-12"></div>
     
 <section class="container" id="introduction">
     <div class="col-xs-12 col-sm-12 col-md-12" id="divintro">
@@ -199,7 +202,7 @@
             </div>
         </div>
     </div>
-    <div class="separador col-xs-12"></div> 
+    <div id="NivelSup" class="separador col-xs-12"></div> 
 </section>
 
 
@@ -270,8 +273,8 @@
     </div>
     </section>
 </div>
-    
-<div class="separador col-xs-12"></div> 
+
+<div id="CursosScroll" class="separador col-xs-12"></div> 
     
 
 <section class="container-fluid" id="cursosmenu">
@@ -338,7 +341,7 @@
     </div>
 </section>
 
-<div class="separador col-xs-12"></div> 
+<div id="RecuerdaScroll" class="separador col-xs-12"></div> 
 
 <section class="container-fluid" id="recuerda">
    <div class="col-xs-12 col-sm-12 col-md-12" id="divRecuerda">
@@ -360,10 +363,57 @@
        
    </div>
 </section>
+
+<div class="separador col-xs-12"></div>
+<div class="separador col-xs-12"></div>
 </div>
     
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
+<script>
+$("#botonInicio").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#inicio").offset().top}, 1000);
+});
+</script>
+
+<script>
+$("#botonEstudiarEnLinea").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#EstudiarEnLinea").offset().top}, 1000);
+});
+</script>
+
+<script>
+$("#botonPrepa").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#PrepaScroll").offset().top}, 1000);
+});
+</script>
+
+<script>
+$("#botonNivelSup").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#NivelSup").offset().top}, 1000);
+});
+</script>
+
+<script>
+$("#botonCursos").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#CursosScroll").offset().top}, 1000);
+});
+</script>
+
+<script>
+$("#botonRecuerda").click(function ()
+{
+    $('html,body').animate({scrollTop: $("#RecuerdaScroll").offset().top}, 1000);
+});
+</script>
+
 
 </body>
 </html>
