@@ -25,6 +25,11 @@
     width: 270px;
     right: 270px;
 }
+.tool{
+    position: relative;
+    display: inline-block;
+    
+}
 
 #img2ENL{
     width: 415px;

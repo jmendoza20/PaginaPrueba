@@ -12,32 +12,38 @@
 
 <div id="NewEncabezado">
     <div class="col-xs-12 col-sm-12 col-md-1" id="SecMenu">
-        <div class="btn-group" id="inicioMenu">
-           
+       <div class="btn-group" id="inicioMenu">
             <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0">
-                <input id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
+                    <input id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
             </div>
             
+            <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="ESTUDIAR EN LÍNEA">
             <div class="col-xs-1 col-md-12">
-                <input id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
+                    <input id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
             </div>
-            
+            </a>
+            <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="PREPA Y BACHILLERATO">
             <div class="col-xs-1 col-md-12">
-                <input id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
+                    <input id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
             </div>
-            
+            </a>
+             <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="NIVEL SUPERIOR">
             <div class="col-xs-1 col-md-12">
+               
                 <input id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
-            </div>
+                    </div>
+            </a>
             
+              <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="CURSOS">
             <div class="col-xs-1 col-md-12">
                 <input id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
             </div>
-            
+            </a>
+             <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="RECUERDA">
             <div class="col-xs-1 col-md-12">
                 <input id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
             </div>
-            
+            </a>
         </div>
     </div>
     
@@ -371,7 +377,12 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+    
 <script>
 $("#botonInicio").click(function ()
 {
