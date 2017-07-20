@@ -2,7 +2,6 @@
 <html lang="es-MX">
 
 <head>
-
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=.1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,39 +10,33 @@
 <body>
 
 <div id="NewEncabezado">
+
     <div class="col-xs-12 col-sm-12 col-md-1" id="SecMenu">
-       <div class="btn-group" id="inicioMenu">
+       <div class="btn-group " id="inicioMenu">
+
             <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0">
-                    <input id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
+                <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
             </div>
             
-            <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="ESTUDIAR EN LÍNEA">
             <div class="col-xs-1 col-md-12">
-                    <input id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
+                    <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
             </div>
-            </a>
-            <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="PREPA Y BACHILLERATO">
-            <div class="col-xs-1 col-md-12">
-                    <input id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
-            </div>
-            </a>
-             <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="NIVEL SUPERIOR">
-            <div class="col-xs-1 col-md-12">
-               
-                <input id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
-                    </div>
-            </a>
             
-              <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="CURSOS">
             <div class="col-xs-1 col-md-12">
-                <input id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
+                    <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
             </div>
-            </a>
-             <a class="tool" href="#" data-toggle="tooltip" data-placement="right" title="RECUERDA">
+            
+            <div class="col-xs-1 col-md-12">               
+                <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
+            </div>
+
             <div class="col-xs-1 col-md-12">
-                <input id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
+                <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
             </div>
-            </a>
+
+            <div class="col-xs-1 col-md-12">
+                <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
+            </div>
         </div>
     </div>
     
@@ -384,45 +377,35 @@ $(document).ready(function(){
 </script>
     
 <script>
-$("#botonInicio").click(function ()
+function scrollInicio() 
 {
-    $('html,body').animate({scrollTop: $("#inicio").offset().top}, 1000);
-});
-</script>
+    window.scrollTo(0,0);
+}
 
-<script>
-$("#botonEstudiarEnLinea").click(function ()
+function scrollEstudiarEnLinea() 
 {
-    $('html,body').animate({scrollTop: $("#EstudiarEnLinea").offset().top}, 1000);
-});
-</script>
+    window.scrollTo(0,750);
+}
 
-<script>
-$("#botonPrepa").click(function ()
+function scrollPrepa() 
 {
-    $('html,body').animate({scrollTop: $("#PrepaScroll").offset().top}, 1000);
-});
-</script>
+    window.scrollTo(0,1700);
+}
 
-<script>
-$("#botonNivelSup").click(function ()
+function scrollNivelSup() 
 {
-    $('html,body').animate({scrollTop: $("#NivelSup").offset().top}, 1000);
-});
-</script>
+    window.scrollTo(0,2250);
+}
 
-<script>
-$("#botonCursos").click(function ()
+function scrollCursos() 
 {
-    $('html,body').animate({scrollTop: $("#CursosScroll").offset().top}, 1000);
-});
-</script>
+    window.scrollTo(0,3030);
+}
 
-<script>
-$("#botonRecuerda").click(function ()
+function scrollRecuerda() 
 {
-    $('html,body').animate({scrollTop: $("#RecuerdaScroll").offset().top}, 1000);
-});
+    window.scrollTo(0,4300);
+}
 </script>
 
 
