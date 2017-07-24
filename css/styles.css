@@ -302,7 +302,26 @@ border-top: 5px solid #00adb6;
     padding-top: 15;
 }
 
+.fontMenuBlue{
+    background-color: #00ADB6;
+}
+
+.fontMenuGrey{
+    background-color: #F2F2F2;
+}
+
 .formatoimg{
     padding-top: 15px;
     padding-bottom: 15px;
+    width: 85px;
+    margin: auto;
+}
+
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+.wrapper{
+    width: 90px;
 }

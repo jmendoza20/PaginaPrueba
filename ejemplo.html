@@ -11,30 +11,30 @@
 
 <div id="NewEncabezado">
 
-    <div class="col-xs-12 col-sm-12 col-md-1" id="SecMenu">
-       <div class="btn-group " id="inicioMenu">
+    <div class="col-xs-12 col-sm-12 col-md-1 nopadding" id="SecMenu">
+       <div class="btn-group nopadding" id="inicioMenu">
 
-            <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0">
-                <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
+            <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0 fontMenuGrey">
+                    <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
             </div>
             
-            <div class="col-xs-1 col-md-12">
+            <div class="col-xs-1 col-md-12 fontMenuGrey">
                     <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
             </div>
             
-            <div class="col-xs-1 col-md-12">
+            <div class="col-xs-1 col-md-12 fontMenuGrey">
                     <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
             </div>
             
-            <div class="col-xs-1 col-md-12">               
+            <div class="col-xs-1 col-md-12 fontMenuGrey">               
                 <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
             </div>
 
-            <div class="col-xs-1 col-md-12">
+            <div class="col-xs-1 col-md-12 fontMenuGrey">
                 <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
             </div>
 
-            <div class="col-xs-1 col-md-12">
+            <div class="col-xs-1 col-md-12 fontMenuGrey">
                 <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
             </div>
         </div>
@@ -379,31 +379,61 @@ $(document).ready(function(){
 <script>
 function scrollInicio() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[0].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,0);
 }
 
 function scrollEstudiarEnLinea() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[1].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,750);
 }
 
 function scrollPrepa() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[2].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,1700);
 }
 
 function scrollNivelSup() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[3].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,2250);
 }
 
 function scrollCursos() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[4].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,3030);
 }
 
 function scrollRecuerda() 
 {
+    var cols = document.getElementsByClassName('fontMenuGrey');
+    for(i=0; i<cols.length; i++) {
+    cols[i].style.backgroundColor = '#F2F2F2';
+    }
+    cols[5].style.backgroundColor = '#00ADB6';
     window.scrollTo(0,4300);
 }
 </script>
