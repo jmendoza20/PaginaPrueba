@@ -311,9 +311,9 @@ border-top: 5px solid #00adb6;
 }
 
 .formatoimg{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 85px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: px;
     margin: auto;
 }
 
@@ -323,5 +323,44 @@ border-top: 5px solid #00adb6;
 }
 
 .wrapper{
-    width: 90px;
+    width: auto;
+}
+
+.inpNoBorder{
+    outline: 0px;    
+}
+
+#tooltip{
+	padding-top:10px;
+	padding-bottom: 5px;
+}
+
+#tooltip .tooltiptext{
+	top: 45%;
+	left: 105%;
+	color: white;
+	width: 150px;
+	text-align: center;
+	padding: 5px  0;
+	border-radius: 6px;
+	background-color: black;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+    font-size: 13px;
+}
+
+#tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+#tooltip .tooltiptext::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent;
 }
