@@ -25,10 +25,11 @@
     width: 270px;
     right: 270px;
 }
-.tool{
+
+#tooltip{
     position: relative;
     display: inline-block;
-    
+    align-self: right;
 }
 
 #img2ENL{
@@ -284,7 +285,6 @@ border-top: 5px solid #00adb6;
     
 }
 
-
 .fondoP{
     background-color: blue;
 }
@@ -303,6 +303,8 @@ border-top: 5px solid #00adb6;
 }
 
 .formatoimg{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 100%;
+    width: 80%;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
