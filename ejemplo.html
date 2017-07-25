@@ -12,44 +12,43 @@
 <div id="NewEncabezado">
 
     <div class="col-xs-12 col-sm-12 col-md-1" id="SecMenu">
-       <div class="btn-group " id="inicioMenu">
 
-            <div class="col-xs-offset-0 col-xs-2 col-sm-offset-3 col-sm-1 col-md-12 col-md-offset-0">
+            <div class="col-xs-offset-0 col-xs-2 col-sm-offset-3 col-sm-1 col-md-12 col-md-offset-0" id="boton1">
                 <a id="tooltip">
                  <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
                 </a>
             </div>
             
-            <div class="col-xs-2 col-sm-1 col-md-12">
+            <div class="col-xs-2 col-sm-1 col-md-12" id="boton2">
                 <a id="tooltip" title="ESTUDIAR EN LÍNEA">
                   <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
                 </a>    
             </div>
             
-            <div class="col-xs-2 col-sm-1 col-md-12">
+            <div class="col-xs-2 col-sm-1 col-md-12" id="boton3">
                 <a id="tooltip" title="PREPA Y BACHILLERATO">
                   <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
                 </a>  
             </div>
             
-            <div class="col-xs-2 col-sm-1 col-md-12">        
+            <div class="col-xs-2 col-sm-1 col-md-12" id="boton4">        
                 <a id="tooltip" title="NIVEL SUPERIOR">       
                  <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
                 </a> 
             </div>
 
-            <div class="col-xs-2 col-sm-1 col-md-12">
+            <div class="col-xs-2 col-sm-1 col-md-12" id="boton5">
                 <a id="tooltip" title="CURSOS">
                  <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
                 </a> 
             </div>
 
-            <div class="col-xs-2 col-sm-1 col-md-12">
+            <div class="col-xs-2 col-sm-1 col-md-12" id="boton6">
                 <a id="tooltip" title="RECUERDA">
                  <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
                 </a> 
             </div>
-        </div>
+       
     </div>
     
     <header class="col-xs-12 col-sm-12 col-md-11 encabezado">
@@ -386,31 +385,67 @@
 function scrollInicio() 
 {
     window.scrollTo(0,0);
+    document.getElementById('boton2').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#F2F2F2';
+    document.getElementById('boton1').style.background='#00ADB6';
 }
 
 function scrollEstudiarEnLinea() 
 {
     window.scrollTo(0,750);
+    document.getElementById('boton1').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#F2F2F2';
+    document.getElementById('boton2').style.background='#00ADB6';
 }
 
 function scrollPrepa() 
 {
     window.scrollTo(0,1700);
+    document.getElementById('boton1').style.background='#F2F2F2';
+    document.getElementById('boton2').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#00ADB6';
 }
 
 function scrollNivelSup() 
 {
     window.scrollTo(0,2250);
+    document.getElementById('boton1').style.background='#F2F2F2';
+    document.getElementById('boton2').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#00ADB6';
 }
 
 function scrollCursos() 
 {
     window.scrollTo(0,3030);
+    document.getElementById('boton1').style.background='#F2F2F2';
+    document.getElementById('boton2').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#00ADB6';
 }
 
 function scrollRecuerda() 
 {
     window.scrollTo(0,4300);
+    document.getElementById('boton1').style.background='#F2F2F2';
+    document.getElementById('boton2').style.background='#F2F2F2';
+    document.getElementById('boton3').style.background='#F2F2F2';
+    document.getElementById('boton4').style.background='#F2F2F2';
+    document.getElementById('boton5').style.background='#F2F2F2';
+    document.getElementById('boton6').style.background='#00ADB6';
 }
 </script>
 
