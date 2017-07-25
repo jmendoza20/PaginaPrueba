@@ -14,33 +14,43 @@
     <div class="col-xs-12 col-sm-12 col-md-1 nopadding" id="SecMenu">
        <div class="btn-group nopadding" id="inicioMenu">
 
-            <div class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0 fontMenuGrey">
+            <div id="home" Class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0 fontMenuBlue">
                     <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive inpNoBorder" type="image" src="img/InicioMenu.png" alt="Submit">
             </div>
             
-            <div id="tooltip" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="estudia" class="col-xs-1 col-md-12 fontMenuGrey">
+                   <div id="tooltip">
                     <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive inpNoBorder" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
                     <span class="tooltiptext">ESTUDIAR EN LINEA</span>
+                   </div>
             </div>
             
-            <div id="tooltip" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="prepabach" class="col-xs-1 col-md-12 fontMenuGrey">
+                   <div id="tooltip">
                     <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive inpNoBorder" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
                     <span class="tooltiptext">PREPA Y BACHILLERATO</span>
+                </div>
             </div>
             
-            <div id="tooltip" class="col-xs-1 col-md-12 fontMenuGrey">               
+            <div id="nivelsup" class="col-xs-1 col-md-12 fontMenuGrey">
+               <div id="tooltip">               
                 <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive inpNoBorder" type="image" src="img/nivelSupMenu.png" alt="Submit">
                 <span class="tooltiptext">NIVEL SUPERIOR</span>
+                </div>
             </div>
 
-            <div id="tooltip" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="cursos" class="col-xs-1 col-md-12 fontMenuGrey">
+               <div id="tooltip">
                 <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive inpNoBorder" type="image" src="img/cursosMenu.png" alt="Submit">
                 <span class="tooltiptext">CURSOS</span>
+                </div>
             </div>
 
-            <div id="tooltip" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="recuerda" class="col-xs-1 col-md-12 fontMenuGrey">
+               <div id="tooltip">
                 <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive inpNoBorder" type="image" src="img/recuerdaMenu.png" alt="Submit">
                 <span class="tooltiptext">RECUERDA</span>
+               </div>
             </div>
             
         </div>
@@ -383,13 +393,59 @@ $(document).ready(function(){
 </script>
     
 <script>
+    
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    
+    if (document.body.scrollTop > 725 || document.documentElement.scrollTop > 725) {
+        document.getElementById("home").style.backgroundColor = '#F2F2F2';
+    } else {
+        document.getElementById("home").style.backgroundColor = '#00ADB6';
+    }
+    
+    if ((document.body.scrollTop > 725 || document.documentElement.scrollTop > 725) && (document.body.scrollTop < 1650 || document.documentElement.scrollTop < 1650)){
+        document.getElementById("estudia").style.backgroundColor = '#00ADB6';
+    } else {
+        document.getElementById("estudia").style.backgroundColor = '#F2F2F2';
+    }
+    
+    if ((document.body.scrollTop > 1650 || document.documentElement.scrollTop > 1650) && (document.body.scrollTop < 2200 || document.documentElement.scrollTop < 2200)){
+        document.getElementById("prepabach").style.backgroundColor = '#00ADB6';
+        document.getElementById("estudia").style.backgroundColor = '#F2F2F2';
+    } else {
+        document.getElementById("prepabach").style.backgroundColor = '#F2F2F2';
+    }
+    
+    if ((document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) && (document.body.scrollTop < 2980 || document.documentElement.scrollTop < 2980)){
+        document.getElementById("nivelsup").style.backgroundColor = '#00ADB6';
+        document.getElementById("prepabach").style.backgroundColor = '#F2F2F2';
+    } else {
+        document.getElementById("nivelsup").style.backgroundColor = '#F2F2F2';
+    }
+    
+    if ((document.body.scrollTop > 2980 || document.documentElement.scrollTop > 2980) && (document.body.scrollTop < 4300 || document.documentElement.scrollTop < 4250)){
+        document.getElementById("cursos").style.backgroundColor = '#00ADB6';
+        document.getElementById("nivelsup").style.backgroundColor = '#F2F2F2';
+    } else {
+        document.getElementById("cursos").style.backgroundColor = '#F2F2F2';
+    }
+    
+    if ((document.body.scrollTop > 4250 || document.documentElement.scrollTop > 4250)){
+        document.getElementById("recuerda").style.backgroundColor = '#00ADB6';
+        document.getElementById("cursos").style.backgroundColor = '#F2F2F2';
+    } else {
+        document.getElementById("recuerda").style.backgroundColor = '#F2F2F2';
+    }
+}
+    
 function scrollInicio() 
 {
     var cols = document.getElementsByClassName('fontMenuGrey');
     for(i=0; i<cols.length; i++) {
     cols[i].style.backgroundColor = '#F2F2F2';
     }
-    cols[0].style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#00ADB6';
     window.scrollTo(0,0);
 }
 
@@ -399,7 +455,8 @@ function scrollEstudiarEnLinea()
     for(i=0; i<cols.length; i++) {
     cols[i].style.backgroundColor = '#F2F2F2';
     }
-    cols[1].style.backgroundColor = '#00ADB6';
+    cols[0].style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#F2F2F2';
     window.scrollTo(0,750);
 }
 
@@ -410,6 +467,7 @@ function scrollPrepa()
     cols[i].style.backgroundColor = '#F2F2F2';
     }
     cols[2].style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#F2F2F2';
     window.scrollTo(0,1700);
 }
 
@@ -419,7 +477,8 @@ function scrollNivelSup()
     for(i=0; i<cols.length; i++) {
     cols[i].style.backgroundColor = '#F2F2F2';
     }
-    cols[3].style.backgroundColor = '#00ADB6';
+    cols[1].style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#F2F2F2';
     window.scrollTo(0,2250);
 }
 
@@ -429,7 +488,8 @@ function scrollCursos()
     for(i=0; i<cols.length; i++) {
     cols[i].style.backgroundColor = '#F2F2F2';
     }
-    cols[4].style.backgroundColor = '#00ADB6';
+    cols[3].style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#F2F2F2';
     window.scrollTo(0,3030);
 }
 
@@ -439,7 +499,8 @@ function scrollRecuerda()
     for(i=0; i<cols.length; i++) {
     cols[i].style.backgroundColor = '#F2F2F2';
     }
-    cols[5].style.backgroundColor = '#00ADB6';
+    document.getElementById('recuerda').style.backgroundColor = '#00ADB6';
+    document.getElementById('home').style.backgroundColor = '#F2F2F2';
     window.scrollTo(0,4300);
 }
 </script>
