@@ -168,7 +168,6 @@ ul.tips{
     width: 15%;
     right: 1%;
     top: 5px;
-
 }
 
 #prepa{
@@ -294,7 +293,7 @@ border-top: 5px solid #00adb6;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    z-index: 100;
+    z-index: 1;
 }
 
 #SecMenu{
@@ -311,9 +310,9 @@ border-top: 5px solid #00adb6;
 }
 
 .formatoimg{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 66px;
     margin: auto;
 }
 
@@ -363,4 +362,46 @@ border-top: 5px solid #00adb6;
 	border-width: 5px;
 	border-style: solid;
 	border-color: transparent black transparent transparent;
+}
+
+.btn-group{
+    display:inline;
+}
+
+.NavBarHeader{
+    color: #999999;
+    font-size: 23px;
+    font-weight: bolder;
+    padding-top: 17px;
+}
+
+.NavBarText{
+    color: #999999;
+    font-size: 18px;
+    padding-top:  7px !important;
+    padding-bottom: 7px !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#customNb{
+    background-color: #F2F2F2;
+    position: fixed;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+}
+
+#myNavbar{
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+}
+
+.icon-bar{
+    background-color: #cccccc;
+    padding: 2px;
+}
+
+#NbarButton{
+    border: 2px solid #cccccc;
 }

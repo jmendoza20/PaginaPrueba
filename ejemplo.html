@@ -11,42 +11,44 @@
 
 <div id="NewEncabezado">
 
-    <div class="col-xs-12 col-sm-12 col-md-1 nopadding" id="SecMenu">
+    <div class="col-xs-12 hidden-xs col-sm-1 col-md-1 nopadding" id="SecMenu">
        <div class="btn-group nopadding" id="inicioMenu">
 
-            <div id="home" Class="col-xs-offset-3 col-xs-1 col-md-12 col-md-offset-0 fontMenuBlue">
+            <div id="home" Class="col-xs-0 col-sm-12 col-md-12 fontMenuBlue">
+                   <div id="tooltip">
                     <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive inpNoBorder" type="image" src="img/InicioMenu.png" alt="Submit">
+                   </div>
             </div>
             
-            <div id="estudia" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="estudia" class="col-xs-0 col-sm-12 col-md-12 fontMenuGrey">
                    <div id="tooltip">
                     <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive inpNoBorder" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
                     <span class="tooltiptext">ESTUDIAR EN LINEA</span>
                    </div>
             </div>
             
-            <div id="prepabach" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="prepabach" class="col-xs-0 col-sm-12 col-md-12 fontMenuGrey">
                    <div id="tooltip">
                     <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive inpNoBorder" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
                     <span class="tooltiptext">PREPA Y BACHILLERATO</span>
                 </div>
             </div>
             
-            <div id="nivelsup" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="nivelsup" class="col-xs-0 col-sm-12 col-md-12 fontMenuGrey">
                <div id="tooltip">               
                 <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive inpNoBorder" type="image" src="img/nivelSupMenu.png" alt="Submit">
                 <span class="tooltiptext">NIVEL SUPERIOR</span>
                 </div>
             </div>
 
-            <div id="cursos" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="cursos" class="col-xs-0 col-sm-12 col-md-12 fontMenuGrey">
                <div id="tooltip">
                 <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive inpNoBorder" type="image" src="img/cursosMenu.png" alt="Submit">
                 <span class="tooltiptext">CURSOS</span>
                 </div>
             </div>
 
-            <div id="recuerda" class="col-xs-1 col-md-12 fontMenuGrey">
+            <div id="recuerda" class="col-xs-0 col-sm-12 col-md-12 fontMenuGrey">
                <div id="tooltip">
                 <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive inpNoBorder" type="image" src="img/recuerdaMenu.png" alt="Submit">
                 <span class="tooltiptext">RECUERDA</span>
@@ -56,12 +58,38 @@
         </div>
     </div>
     
-    <header class="col-xs-12 col-sm-12 col-md-11 encabezado">
+    <header class="col-xs-12 col-sm-11 col-md-11 encabezado">
         <div>
             <h2 id="titulo">REALIZA TUS ESTUDIOS EN LÍNEA</h2>
             <img id="logo" src="img/logo.png" alt="logoMM"> 
         </div>
     </header>
+    
+    
+    <div class="col-xs-12 col-sm-12 hidden-sm col-md-12 hidden-md hidden-lg nopadding">
+        <nav id="customNb" class="navbar navbar-white nopadding">
+          
+          <div class="container-fluid">
+              <div class="navbar-header">
+                 <button id="NbarButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                 </button>
+                 <a class="navbar-brand NavBarHeader" href="#">Inicio</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a class="NavBarText" onclick="scrollEstudiarEnLinea()">Estudiar en linea</a></li>
+                <li><a class="NavBarText" onclick="scrollPrepa()">Prepa y bachillerato</a></li>
+                <li><a class="NavBarText" onclick="scrollNivelSup()">Nivel superior</a></li>
+                <li><a class="NavBarText" onclick="scrollCursos()">Cursos</a></li>
+                <li><a class="NavBarText" onclick="scrollRecuerda()">Recuerda</a></li>
+              </ul>
+              </div>
+          </div>
+        </nav>
+    </div> 
 </div>
 
 <section id="inicio" class="container-fluid">
