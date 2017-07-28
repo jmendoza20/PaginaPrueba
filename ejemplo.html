@@ -15,37 +15,37 @@
 
             <div class=" col-md-12 col-md-offset-0" id="boton1">
                 <a id="tooltip">
-                 <input onscroll="colorScroll()" onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
+                 <input onclick="scrollInicio()" id="botonInicio" class="formatoimg img-responsive" type="image" src="img/InicioMenu.png" alt="Submit">
                 </a>
             </div>
             
             <div class="col-md-12" id="boton2">
                 <a id="tooltip" title="ESTUDIAR EN LÍNEA">
-                  <input onscroll="colorScroll()" onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
+                  <input onclick="scrollEstudiarEnLinea()" id="botonEstudiarEnLinea" class="formatoimg img-responsive" type="image" src="img/estudiarEnLineaMenu.png" alt="Submit">
                 </a>    
             </div>
             
             <div class="col-md-12" id="boton3">
                 <a id="tooltip" title="PREPA Y BACHILLERATO">
-                  <input onscroll="colorScroll()" onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
+                  <input onclick="scrollPrepa()"id="botonPrepa" class="formatoimg img-responsive" type="image" src="img/prepaYBachiMenu.png" alt="Submit">
                 </a>  
             </div>
             
             <div class=" col-md-12" id="boton4">        
                 <a id="tooltip" title="NIVEL SUPERIOR">       
-                 <input onscroll="colorScroll()" onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
+                 <input onclick="scrollNivelSup()" id="botonNivelSup" class="formatoimg img-responsive" type="image" src="img/nivelSupMenu.png" alt="Submit">
                 </a> 
             </div>
 
             <div class="col-md-12" id="boton5">
                 <a id="tooltip" title="CURSOS">
-                 <input onscroll="colorScroll()" onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
+                 <input onclick="scrollCursos()" id="botonCursos" class="formatoimg img-responsive" type="image" src="img/cursosMenu.png" alt="Submit">
                 </a> 
             </div>
 
             <div class="col-md-12" id="boton6">
                 <a id="tooltip" title="RECUERDA">
-                 <input onscroll="colorScroll()" onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
+                 <input onclick="scrollRecuerda()" id="botonRecuerda" class="formatoimg img-responsive" type="image" src="img/recuerdaMenu.png" alt="Submit">
                 </a> 
             </div>
        
@@ -423,6 +423,9 @@
 
  
 <script>
+
+window.onscroll =function() {ColorScroll()};
+
 function scrollInicio() 
 {
     window.scrollTo(0,0);
@@ -490,65 +493,73 @@ function scrollRecuerda()
 }
 
 
-function colorInicio(x)
+function ColorScroll()
 {
-    document.getElementById('boton2').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#F2F2F2';
-    document.getElementById('boton1').style.background='#00ADB6';
+    if (document.body.scrollTop > 725 || document.documentElement.scrollTop >725)
+    {
+        document.getElementById('boton1').style.background='#F2F2F2';
+    }
+    else
+    {
+        document.getElementById('boton1').style.background='#00ADB6';
+    }
+
+    if ((document.body.scrollTop >725 || document.documentElement.scrollTop >725) &&
+        (document.body.scrollTop <1650 || document.documentElement.scrollTop <1650))
+    {
+        document.getElementById('boton2').style.background='#00ADB6';
+    }
+    else
+    {
+        document.getElementById('boton2').style.background='#F2F2F2';
+    }
+
+    if ((document.body.scrollTop >1650 || document.documentElement.scrollTop >1650) &&
+        (document.body.scrollTop <2300 || document.documentElement.scrollTop <2300))
+    {
+        document.getElementById('boton3').style.background='#00ADB6';
+        document.getElementById('boton2').style.background='#F2F2F2';
+    }
+    else
+    {
+        document.getElementById('boton3').style.background='#F2F2F2';
+    }
+
+    if ((document.body.scrollTop >2300 || document.documentElement.scrollTop >2300) &&
+        (document.body.scrollTop <3100 || document.documentElement.scrollTop <3100))
+    {
+        document.getElementById('boton4').style.background='#00ADB6';
+        document.getElementById('boton3').style.background='#F2F2F2';
+    }
+    else
+    {
+        document.getElementById('boton4').style.background='#F2F2F2';
+    }
+
+    if ((document.body.scrollTop >3100 || document.documentElement.scrollTop >3100) &&
+        (document.body.scrollTop <4500 || document.documentElement.scrollTop <4500))
+    {
+        document.getElementById('boton5').style.background='#00ADB6';
+        document.getElementById('boton4').style.background='#F2F2F2';
+    }
+    else
+    {
+        document.getElementById('boton5').style.background='#F2F2F2';
+    }
+
+    if ((document.body.scrollTop >4500 || document.documentElement.scrollTop >4500) &&
+        (document.body.scrollTop <4900 || document.documentElement.scrollTop <4900))
+    {
+        document.getElementById('boton6').style.background='#00ADB6';
+        document.getElementById('boton5').style.background='#F2F2F2';
+    }
+    else
+    {
+        document.getElementById('boton6').style.background='#F2F2F2';
+    }
 }
 
-function colorEstudiarEnLinea(x)
-{
-    document.getElementById('boton1').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#F2F2F2';
-    document.getElementById('boton2').style.background='#00ADB6';
-}
 
-function colorPrepa(x)
-{
-    document.getElementById('boton1').style.background='#F2F2F2';
-    document.getElementById('boton2').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#00ADB6';
-}
-
-function colorSuperior(x)
-{
-    document.getElementById('boton1').style.background='#F2F2F2';
-    document.getElementById('boton2').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#00ADB6';
-}
-
-function colorCursos(x)
-{
-    document.getElementById('boton1').style.background='#F2F2F2';
-    document.getElementById('boton2').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#00ADB6';
-}
-
-function colorRecuerda(x)
-{
-    document.getElementById('boton1').style.background='#F2F2F2';
-    document.getElementById('boton2').style.background='#F2F2F2';
-    document.getElementById('boton3').style.background='#F2F2F2';
-    document.getElementById('boton4').style.background='#F2F2F2';
-    document.getElementById('boton5').style.background='#F2F2F2';
-    document.getElementById('boton6').style.background='#00ADB6';
-}
 
 </script>
 
